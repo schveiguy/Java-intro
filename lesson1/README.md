@@ -106,7 +106,7 @@ libraries.
 Note that when running VSCode, you will know you are running the right
 version if you see the WPILib icon in your side-bar:
 
-image here
+![WPILib sidebar icon](wpilib%20icon.png)
 
 If you do not see this icon, you are not running the right version, and you will
 not have access to the correct build systems that WPILib requires.
