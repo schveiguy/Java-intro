@@ -16,20 +16,20 @@ CPU. For example, the binary code for an ARM CPU is very different from an
 Intel CPU.
 
 These binary codes are extremely difficult to write and understand for humans,
-so we invented [programming languages](url) for humans to write and understand.
+so we invented [programming languages](https://en.wikipedia.org/wiki/Programming_language) for humans to write and understand.
 Keep in mind, a programming language is an *exact* language. It is not like
 English, with subtle semantics based on context. And we need it to be this way!
 We do not want robots deciding on their own what you "really meant", they need
 to behave exactly as instructed -- no room for ambiguity.
 
-A [compiler](url) is a computer program which reads in a program that is
+A [compiler](https://en.wikipedia.org/wiki/Compiler) is a computer program which reads in a program that is
 written in a programming language, and produces a binary instruction file which
 the computer can execute.[^1]
 
 [^1]: The Java compiler technically compiles code into a simpler binary code
-    called [bytecode](url). Bytecode is not directly understood byh the CPU, but
+    called [bytecode](https://en.wikipedia.org/wiki/Bytecode). Bytecode is not directly understood byh the CPU, but
     it is easily interpreted using a virtual machine (called the Java Virtual
-    Machine, or JVM). While not as fast as [native code](url), the Java
+    Machine, or JVM). While not as fast as [native code](https://en.wikipedia.org/wiki/Machine_code), the Java
     interpreter can use techniques to get the interpreted code to run as fast or
     nearly as fast as native code.
 
@@ -48,7 +48,7 @@ slightly nuanced other meanings in different contexts. A statically typed
 language means that a piece of data, once assigned a type, can never change its
 type. It will always be that type.
 
-The opposite of this is called [dynamic typing](url). A dynamically typed
+The opposite of this is called [dynamic typing](https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information). A dynamically typed
 language such as Python can have a piece of data change types from one part of
 the code to the next. While this power can make for shorter code or less
 boilerplate, the drawback is that the compiler cannot know whether something is
@@ -61,7 +61,7 @@ lanugages are *interpreted*. This is not a hard rule though.
 
 ## What does Object oriented mean?
 
-[Object oriented programming](url) is a style of programming which is centered
+[Object oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) is a style of programming which is centered
 around objects, or bundles of code and data.
 
 OO programming is a large *paradigm* of programming that can produce intuitive
@@ -87,12 +87,12 @@ to avoid memory errors regardless of the drawbacks!
 
 # Setting up your environment
 
-[WPILib](url), the programming framework for building robots, uses a program
-called [Visual Studio Code](url) to build and debug your robot programs. We are
+[WPILib](https://docs.wpilib.org/), the programming framework for building robots, uses a program
+called [Visual Studio Code](https://code.visualstudio.com/) to build and debug your robot programs. We are
 going to use their installation of VSCode to build and test all programs in this
 class.
 
-To install, use [this link](url) to download and run the installer. This will be
+To install, use [this link](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html) to download and run the installer. This will be
 different based on which operating system you are using, make sure to download
 the correct one.
 
@@ -114,7 +114,7 @@ not have access to the correct build systems that WPILib requires.
 # Your first Java program
 
 All programming languages provide a program which displays on the screen the
-text "Hello, world!". This is known as a [hello world program](url). This will
+text "Hello, world!". This is known as a [hello world program](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program). This will
 be no different!
 
 ## Create a new project
@@ -127,14 +127,14 @@ Project`.[^2]
     build and run Java, we will use this opportunity to get used to the VSCode
     and gradle project systems.
 
-Select [Gradle](url) as the build system. It may ask you to install the plugin
+Select [Gradle](https://gradle.org/) as the build system. It may ask you to install the plugin
 for gradle.
 
 Select a new folder where your project will live. I recommend creating a
 `Programming` or `Robotics` folder under your Documents folder, and then a
 subfolder named `Hello`
 
-Gradle will ask you the [DSL](url) you want to use for the build. Select
+Gradle will ask you the [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) you want to use for the build. Select
 `Groovy`, as that is what WPILib uses.
 
 Name the project "Hello" (should be the default)
@@ -213,7 +213,7 @@ text between these lines is *ignored* by the compiler[^3], and is not part of yo
 program. The purpose of a comment is to document the surrounding code for human
 consumption.
 
-[^3]: Not all programs ignore comments. For example, the [javadoc](url) program
+[^3]: Not all programs ignore comments. For example, the [javadoc](https://docs.oracle.com/en/java/javase/21/javadoc/javadoc.html) program
     which can generate very pretty web pages documenting all your code using
     specially formed comments.
 
@@ -260,10 +260,10 @@ managed by VSCode[^4] and is a rule which you probably will never run afoul of.
 
 There is a lot to unpack here.
 
-First, what is a [*function*](url)? A function is a collection of instructions
+First, what is a [*function*](https://en.wikipedia.org/wiki/Function_(computer_programming))? A function is a collection of instructions
 which executed in order, gives the CPU something to do. A function *declaration*
 announces to the compiler a function, and what it's name is. All names in Java
-are [*case sensitive*](url). All functions are invoked using the name.
+are [*case sensitive*](https://en.wikipedia.org/wiki/Case_sensitivity). All functions are invoked using the name.
 
 The `public` attribute means code outside the `App` class can call this function
 
@@ -289,9 +289,9 @@ program are passed to your `args` parameter.
         System.out.println("Hello, World!");
 ```
 
-This line is a [*statement*](url), or an instruction of what the computer should
+This line is a [*statement*](https://en.wikipedia.org/wiki/Statement_(computer_science)), or an instruction of what the computer should
 do. In this case, it is a *function call* to the function
-[`System.out.println`](url). You might be able to guess what this does.
+[`System.out.println`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/PrintStream.html#println(java.lang.String)). You might be able to guess what this does.
 
 The `System` part of the call is the name of the class which will contain the
 appropriate function.
@@ -312,7 +312,7 @@ about expressions and literals later.
 And finally, the semi-colon is an important part of Java code. This tells the
 compiler that the statement is over, and it should expect more statements or the
 end of the function next. Because Java does not have [*significant
-whitespace*](url), it uses semi-colons to provide anchor points during
+whitespace*](https://en.wikipedia.org/wiki/Off-side_rule), it uses semi-colons to provide anchor points during
 compilation to help disambiguate instructions and diagnose errors. There are
 many different languages which also use semi-colons for this purpose.
 
