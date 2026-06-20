@@ -27,7 +27,7 @@ written in a programming language, and produces a binary instruction file which
 the computer can execute.[^1]
 
 [^1]: The Java compiler technically compiles code into a simpler binary code
-    called [bytecode](https://en.wikipedia.org/wiki/Bytecode). Bytecode is not directly understood byh the CPU, but
+    called [bytecode](https://en.wikipedia.org/wiki/Bytecode). Bytecode is not directly understood by the CPU, but
     it is easily interpreted using a virtual machine (called the Java Virtual
     Machine, or JVM). While not as fast as [native code](https://en.wikipedia.org/wiki/Machine_code), the Java
     interpreter can use techniques to get the interpreted code to run as fast or
@@ -57,7 +57,7 @@ dynamically typed languages that will be rejected by the compiler of a
 statically typed language.
 
 Typically, statically typed languages are *compiled*, whereas dynamically typed
-lanugages are *interpreted*. This is not a hard rule though.
+languages are *interpreted*. This is not a hard rule though.
 
 ## What does Object oriented mean?
 
@@ -103,7 +103,7 @@ example, the 2026 season should say "WPILib 2026", and have a WPILib icon.
 Running VSCode from a prior season will not work with the latest robot
 libraries.
 
-Note that when running VSCode, you will know you you are running the right
+Note that when running VSCode, you will know you are running the right
 version if you see the WPILib icon in your side-bar:
 
 image here
@@ -113,13 +113,13 @@ not have access to the correct build systems that WPILib requires.
 
 # Your first Java program
 
-All programming languages provide a program which displays on the screen the
-text "Hello, world!". This is known as a [hello world program](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program). This will
-be no different!
+By tradition, the first program written in any programming language is one that
+displays the text "Hello, world!" on the screen. This is known as a
+[hello world program](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program). This will be no different!
 
 ## Create a new project
 
-Using VSCode, create a new project using the command pallete (`shift-ctrl-p` on
+Using VSCode, create a new project using the command palette (`shift-ctrl-p` on
 Windows, `shift-cmd-p` on Mac), and finding the command `Java: Create Java
 Project`.[^2]
 
@@ -139,7 +139,7 @@ Gradle will ask you the [DSL](https://en.wikipedia.org/wiki/Domain-specific_lang
 
 Name the project "Hello" (should be the default)
 
-Gradle will create your project. Then ask if you want to open it. Say yes.
+Gradle will create your project. It will then ask if you want to open it. Say yes.
 
 It also may ask for trusting the gradle.jar file. Say yes to this as well.
 
@@ -166,7 +166,7 @@ public class App {
 ## Remove default testing harness
 
 The `AppTest.java` harness will test that the application functions work as
-designed. You can remove that test (Called `appHasAGreeting`. This test checks
+designed. You can remove that test (called `appHasAGreeting`). This test checks
 that the code functions as designed. However, we will remove the test, since
 we aren't going to be using test harnesses in this class.
 
@@ -194,9 +194,9 @@ cause the build to fail.
 
 # Anatomy of hello, world
 
-This is a quick introduction of everything in this file. We are going to go
-through all the lines, and don't worry if you don't quite understand everything
-being discussed. There is a lot even in this one little file.
+This is a quick introduction of everything in the `App.java` file. We are going
+to go through all the lines, and don't worry if you don't quite understand
+everything being discussed. There is a lot even in this one little file.
 
 In future lessons we will cover in depth the different things identified here.
 
@@ -262,10 +262,10 @@ There is a lot to unpack here.
 
 First, what is a [*function*](https://en.wikipedia.org/wiki/Function_(computer_programming))? A function is a collection of instructions
 which executed in order, gives the CPU something to do. A function *declaration*
-announces to the compiler a function, and what it's name is. All names in Java
+announces to the compiler a function, and what its name is. All names in Java
 are [*case sensitive*](https://en.wikipedia.org/wiki/Case_sensitivity). All functions are invoked using the name.
 
-The `public` attribute means code outside the `App` class can call this function
+The `public` attribute means code outside the `App` class can call this function.
 
 The `static` attribute means that the function `main` is meant to be called
 without an *instance* of the `App` object (we will talk about this later).
@@ -283,7 +283,7 @@ of strings, not just one. `args` is the name of the *parameter*.
 When your program is started, `main` is called, and all parameters sent to the
 program are passed to your `args` parameter.
 
-## println function call
+## `println` function call
 
 ```java
         System.out.println("Hello, World!");
@@ -299,14 +299,14 @@ appropriate function.
 `out` stands for "output", or "standard output".
 
 `println` is the actual name of the function. This function accepts a single
-arugment and renders it as text to the screen on the output stream. This is the
+argument and renders it as text to the screen on the output stream. This is the
 function which actually says "Hello, world!" in your terminal.
 
-The `println` function ends with `ln` because it prints its arugment as a single
+The `println` function ends with `ln` because it prints its argument as a single
 line. There is also the `print` function, which does not do this.
 
-The `"Hello, World!"` argument. This is what is called a *string
-expression*, and actually gets turned into a `String` value. We will talk more
+The `"Hello, World!"` part is the *argument* passed to `println`. It is what
+is called a *string expression*, and actually gets turned into a `String` value. We will talk more
 about expressions and literals later.
 
 And finally, the semi-colon is an important part of Java code. This tells the
