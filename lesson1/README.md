@@ -217,13 +217,13 @@ consumption.
     which can generate very pretty web pages documenting all your code using
     specially formed comments.
 
-## `package` statement
+## `package` declaration
 
 ```java
 package hello;
 ```
 
-Java files always need a package statement if they are in a package. A package
+Java files always need a package declaration if they are in a package. A package
 is the directory your source file is located in. Because the gradle hello world
 project places your App.java file under `hello/` folder, it needs to have the
 `package hello;` line.
