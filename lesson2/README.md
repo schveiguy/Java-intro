@@ -19,7 +19,7 @@ don't declare any variables in the program, you actually are using variables!
 
 ## Declaring a variable
 
-To declare a variable in Java, we use the syntax `Type name`. A [type](url) is a
+To declare a variable in Java, we use the syntax `Type name`. A [type](https://en.wikipedia.org/wiki/Data_type) is a
 way of telling the compiler what kind of thing we want to declare.
 
 Java has many builtin types (the most basic things you can declare). It also
@@ -27,7 +27,7 @@ allows you to declare your own types (classes), which we will cover in a later
 lesson.
 
 Probably the most basic type that Java (and many programming languages have) is
-an [*integer*](url). In java, we call this `int`.
+an [*integer*](https://en.wikipedia.org/wiki/Integer_(computer_science)). In java, we call this `int`.
 
 Let's declare an `int` named `age`:
 
@@ -41,14 +41,14 @@ declaration.
 What this declaration says to the compiler is, "I want you to find some memory,
 and in the memory I want to put an integer. Call that piece of memory 'age'".
 
-`age` is called a [*variable*](url). A variable in Java is a named, typed piece
+`age` is called a [*variable*](https://en.wikipedia.org/wiki/Variable_(computer_science)). A variable in Java is a named, typed piece
 of data we can manipulate (i.e. vary)[^1].
 
 [^1]: Actually, even data that you can't and don't vary are still variables. It
     has come to mean essentially a named piece of data.
 
 If we want the variable to start with a default value, we can add an
-[initializer](url) to the variable declaration:
+[initializer](https://en.wikipedia.org/wiki/Initialization_(programming)) to the variable declaration:
 
 ```java
 int age = 42;
@@ -99,7 +99,7 @@ age = 24;
 ```
 
 Let's dive bit deeper into this code. There are actually three parts to this
-statement. The most important piece is the [operator](url) `=`. This is the
+statement. The most important piece is the [operator](https://en.wikipedia.org/wiki/Operator_(computer_programming)) `=`. This is the
 functional piece of the statement. The left side of the operator states what is
 to be assigned, and the right side states the value that should be assigned.
 
@@ -134,7 +134,7 @@ age = age - 10;
 ```
 
 Note we used 2 operators here. On the right side of the assignment operator,
-instead of a value, we have an [*expression*](url). An expression is a sequence
+instead of a value, we have an [*expression*](https://en.wikipedia.org/wiki/Expression_(computer_science)). An expression is a sequence
 of symbols and names that evaluates to something. In this case, the sequence
 `age - 10`, if `age` is currently `24`, will evaluate to `14`. We then take the
 result of this expression, and assign it back to `age`.
@@ -182,7 +182,7 @@ cost of higher memory usage, and in some cases, slower execution.
     values here are 2^31 and 2^63. Why not all the bits? Because one bit is
     used for the sign of the value.
 
-What does [floating point](url) mean? It's a bit complex, but essentially, this
+What does [floating point](https://en.wikipedia.org/wiki/Floating-point_arithmetic) mean? It's a bit complex, but essentially, this
 is a number with a decimal place, like `3.14159`. Integers cannot be assigned a
 floating point number, but floating point numbers can be assigned an integer.
 
