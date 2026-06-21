@@ -4,7 +4,7 @@ Most code in a software project is made up of
 [*statements*](https://en.wikipedia.org/wiki/Statement_(computer_science)). A
 statement can be thought of as a single coherent instruction or group of
 instructions. Sometimes a statement is very short. Sometimes a statement is a
-block of a lot of other statements. We'll go the most common statements in Java
+block of a lot of other statements. We'll go over the most common statements in Java
 in this lesson.
 
 A declaration ties a name to something. That something can be a piece of data, a
@@ -27,7 +27,7 @@ allows you to declare your own types (classes), which we will cover in a later
 lesson.
 
 Probably the most basic type that Java (and many programming languages have) is
-an [*integer*](https://en.wikipedia.org/wiki/Integer_(computer_science)). In java, we call this `int`.
+an [*integer*](https://en.wikipedia.org/wiki/Integer_(computer_science)). In Java, we call this `int`.
 
 Let's declare an `int` named `age`:
 
@@ -47,7 +47,7 @@ of data we can manipulate (i.e. vary)[^1].
 [^1]: Actually, even data that you can't and don't vary are still variables. It
     has come to mean essentially a named piece of data.
 
-If we want the variable to start with a default value, we can add an
+If we want the variable to start with an initial value, we can add an
 [initializer](https://en.wikipedia.org/wiki/Initialization_(programming)) to the variable declaration:
 
 ```java
@@ -68,7 +68,7 @@ System.out.println(age);
 ```
 
 If you follow this pattern, you can display any variable data you have (as long
-as its a basic type).
+as it's a basic type).
 
 Let's look at a complete program:
 
@@ -98,7 +98,7 @@ If we wanted to assign the value `24` to `age`, it looks like this in Java:
 age = 24;
 ```
 
-Let's dive bit deeper into this code. There are actually three parts to this
+Let's dive a bit deeper into this code. There are actually three parts to this
 statement. The most important piece is the [operator](https://en.wikipedia.org/wiki/Operator_(computer_programming)) `=`. This is the
 functional piece of the statement. The left side of the operator states what is
 to be assigned, and the right side states the value that should be assigned.
@@ -170,14 +170,14 @@ robot programming are:
 * `String` - A string of characters (text)
 * `boolean` - A value of `true` or `false`.
 
-What does "wider range" mean? Essentially, the larger or more precise types use
-more space to store data, so they can have a larger range of values[^2]. For
-example, an `int` can store the values `−2,147,483,648` to `2,147,483,647`.
-However, a `long` can store the values `−9,223,372,036,854,775,808` to
-`9,223,372,036,854,775,807`. Using a larger type gets more precision, but at the
-cost of higher memory usage, and in some cases, slower execution.
+What does "wider range" mean? Essentially, the larger types use more space to
+store data, so they can hold a larger range of values[^2]. For example, an `int`
+can store the values `−2,147,483,648` to `2,147,483,647`. However, a `long` can
+store the values `−9,223,372,036,854,775,808` to `9,223,372,036,854,775,807`.
+Using a larger type extends your range, but at the cost of higher memory usage,
+and in some cases, slower execution.
 
-[^2]: The range of values is dictated by the *bits* that each type uses. an
+[^2]: The range of values is dictated by the *bits* that each type uses. An
     `int` in Java is 32-bits, and a `long` is 64-bits. You may notice that the
     values here are 2^31 and 2^63. Why not all the bits? Because one bit is
     used for the sign of the value.
@@ -195,7 +195,7 @@ A declaration generally does *not* execute during the program. It is a note to
 the compiler defining a new name.
 
 A statement *does* execute during the program. The statement gets directly
-translated to machine code that the CPU then runs when yhou run your program.
+translated to machine code that the CPU then runs when you run your program.
 
 We have used 2 different statements in this lesson, assignment statements and
 function call statements. In further lessons we will be using more
@@ -203,7 +203,7 @@ statements, including larger compound statements.[^3]
 
 [^3]: In reality, you have written just ONE type of statement -- an expression
     statement. An expression statement is an expression which simply ends in a
-    semicolon. Assigments and function calls are both expressions, and can be
+    semicolon. Assignments and function calls are both expressions, and can be
     combined with each other in various ways.
 
 ## Summary
