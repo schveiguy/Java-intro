@@ -158,6 +158,18 @@ recognizable as `/`. However, multiplication looks too close to an `x`, which is
 a name. So for programming in almost any language, we use the asterisk `*` for
 multiplication.
 
+## Assignment operators
+
+A very common operation is to perform math on a variable and reassign the value to the same variable.
+
+Java has a shortcut for this, that you will see quite often:
+
+```java
+age += 10; // equivalent to age = age + 10
+```
+
+These work with all math operators.
+
 ## Other types
 
 There are many other basic types in Java. However, the most common types for
@@ -186,6 +198,56 @@ What does [floating point](https://en.wikipedia.org/wiki/Floating-point_arithmet
 is a number with a decimal place, like `3.14159`. Integers cannot be assigned a
 floating point number, but floating point numbers can be assigned an integer.
 
+## Arrays
+
+Arrays are not just one value, but a number of values, all in one variable. An array in Java looks like this:
+
+```java
+int[] a;
+```
+
+This declares an array of `int` values. It can hold 0 values or 1 million values, or all the values that your RAM can hold.
+
+An array is different from a normal type because it must be *allocated*. When you declare an `int`, the compiler knows just how to deal with this. When you declare an array of `int`, it doesn't know if you are going to store 5 ints or 1000 ints, or 1000000 ints. So it does not set aside any space for your array.
+
+To allocate an array we use a `new` expression. We will cover allocation more extensively later.
+
+But suffice it to say, you must allocate an array before you use it.
+
+```java
+a = new int[100]; // allocate the array with 100 ints
+```
+
+Each `int` inside the array is assigned the value `0` to begin with. We can use the values in the array (known as *elements*) by indexing the array with square brackets.
+
+```java
+a[0] = 42;
+System.out.println(a[0]);
+```
+
+Indexes always start at 0. So an array allocated with 100 elements has indexes 0 through 99 inclusive. indexing 100 is a runtime error.
+
+To initialize an array, you can declare it and allocate it at the same time:
+
+```java
+int[] a = new int[10];
+```
+
+But what if we want values other than 0 for each element? You can assign a list of values to the array using curly braces:
+
+```java
+int[] a = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+```
+
+Notice that we don't have to specify the length, the compiler figures out the length from the list we gave it.
+
+You can find out how many elements are in an array by asking for the `.length` property:
+
+```java
+int[] a = new int[10];
+System.out.println(a.length);
+```
+
 ## Statements
 
 So far, we have been using declarations and statements. Both are very similar,
@@ -205,6 +267,7 @@ statements, including larger compound statements.[^3]
     statement. An expression statement is an expression which simply ends in a
     semicolon. Assignments and function calls are both expressions, and can be
     combined with each other in various ways.
+
 
 ## Summary
 
