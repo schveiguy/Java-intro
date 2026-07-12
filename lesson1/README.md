@@ -85,7 +85,7 @@ convenience of not worrying about memory errors.
 Trust me when I say, as someone learning programming, you should be very happy
 to avoid memory errors regardless of the drawbacks!
 
-# Setting up your environment
+## Setting up your environment
 
 [WPILib](https://docs.wpilib.org/), the programming framework for building robots, uses a program
 called [Visual Studio Code](https://code.visualstudio.com/) to build and debug your robot programs. We are
@@ -111,13 +111,13 @@ version if you see the WPILib icon in your side-bar:
 If you do not see this icon, you are not running the right version, and you will
 not have access to the correct build systems that WPILib requires.
 
-# Your first Java program
+## Your first Java program
 
 By tradition, the first program written in any programming language is one that
 displays the text "Hello, world!" on the screen. This is known as a
 [hello world program](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program). This will be no different!
 
-## Create a new project
+### Create a new project
 
 Using VSCode, create a new project using the command palette (`shift-ctrl-p` on
 Windows, `shift-cmd-p` on Mac), and finding the command `Java: Create Java
@@ -143,7 +143,7 @@ Gradle will create your project. It will then ask if you want to open it. Say ye
 
 It also may ask for trusting the gradle.jar file. Say yes to this as well.
 
-## The default project
+### The default project
 
 The default project actually *is* the hello world project. However, it does
 things in a slightly more complex way than we are ready for.
@@ -163,7 +163,7 @@ public class App {
 }
 ```
 
-## Remove default testing harness
+### Remove default testing harness
 
 The `AppTest.java` harness will test that the application functions work as
 designed. You can remove that test (called `appHasAGreeting`). This test checks
@@ -172,7 +172,7 @@ we aren't going to be using test harnesses in this class.
 
 Delete the entire AppTest.java file.
 
-## Run the project
+### Run the project
 
 Above the main function, you will see 2 buttons "Run" and "Debug". Click the
 "Run" button, and you should see output similar to this:
@@ -192,7 +192,7 @@ should tell you the problem with the code. Try to ensure you type in or copy
 one small character difference (even names that are capitalized differently) can
 cause the build to fail.
 
-# Anatomy of hello, world
+## Anatomy of hello, world
 
 This is a quick introduction of everything in the `App.java` file. We are going
 to go through all the lines, and don't worry if you don't quite understand
@@ -200,7 +200,7 @@ everything being discussed. There is a lot even in this one little file.
 
 In future lessons we will cover in depth the different things identified here.
 
-## Comment
+### Comment
 
 ```java
 /*
@@ -217,7 +217,7 @@ consumption.
     which can generate very pretty web pages documenting all your code using
     specially formed comments.
 
-## `package` declaration
+### `package` declaration
 
 ```java
 package hello;
@@ -230,7 +230,7 @@ project places your App.java file under `hello/` folder, it needs to have the
 
 For the most part, VSCode will handle this for you.
 
-## `class` declaration
+### `class` declaration
 
 ```java
 public class App {
@@ -250,7 +250,7 @@ managed by VSCode[^4] and is a rule which you probably will never run afoul of.
 
 [^4]: Try changing the class name and save the file, and see what happens!
 
-## Function `main` declaration
+### Function `main` declaration
 
 ```java
     public static void main(String[] args) {
@@ -283,7 +283,7 @@ of strings, not just one. `args` is the name of the *parameter*.
 When your program is started, `main` is called, and all parameters sent to the
 program are passed to your `args` parameter.
 
-## `println` function call
+### `println` function call
 
 ```java
         System.out.println("Hello, World!");
@@ -316,7 +316,7 @@ whitespace*](https://en.wikipedia.org/wiki/Off-side_rule), it uses semi-colons t
 compilation to help disambiguate instructions and diagnose errors. There are
 many different languages which also use semi-colons for this purpose.
 
-# Summary
+## Summary
 
 We learned about Java, built our first Java program, and executed it. This is a
 great first step towards understanding and writing robot code! There isn't a lot

@@ -13,7 +13,7 @@ from the inputs.
 
 The alteration of execution based on input is called [flow control](https://en.wikipedia.org/wiki/Control_flow).
 
-# if statements
+## if statements
 
 An `if` statement checks a boolean (true/false) value, and if the value is true,
 then it executes a certain block of code. If it is false, it executes a
@@ -34,7 +34,7 @@ if (x > 5) {
 The `if` keyword begins the statement followed by the *condition*. The condition
 *must* be wrapped in parentheses.
 
-## condition
+### condition
 
 A condition expression is an expression which always results in a "truthy"
 value. That is, a value which has an obvious mapping to `true` or `false`.
@@ -42,7 +42,7 @@ value. That is, a value which has an obvious mapping to `true` or `false`.
 A *comparison expression* such as `x > 5` results in `true` if the variable `x` is greater
 than 5. Otherwise, it results in `false`.
 
-## statement block
+### statement block
 
 A statement block is a list of statements wrapped in a set of curly braces `{`
 and `}`. The entire block can be treated as one, when deciding which code to
@@ -62,13 +62,13 @@ However, remember that whitespace is not significant in the Java language, so if
 you do want to execute multiple statements for one branch of an if statement,
 you must use the curly braces.
 
-## else
+### else
 
 The `else` keyword says what to execute when the condition is *false*. This
 portion of the statement is optional (in the case where you don't need to
 execute something when it is false).
 
-## else if
+### else if
 
 If you have more than one condition to test, you can use an `else if`
 construction.
@@ -114,7 +114,7 @@ block of statements will execute in an if-else chain. subsequent conditions can
 be implicitly thought of as including the *negation* of all the previous
 conditions (they all must be false to reach the chained `else` statements).
 
-# boolean logic
+## boolean logic
 
 Sometimes, we *do* want to test multiple things to determine whether to execute
 a statement block. For that we need to combine multiple tests into one
@@ -153,7 +153,7 @@ parentheses:
 `!(a > b && a < c)` : false if `a` is greater than `b` AND `a` is less than `c`,
 true otherwise.
 
-# While loop
+## While loop
 
 What if we want to execute a block of statements multiple times? For that, we
 need a [loop](https://en.wikipedia.org/wiki/Control_flow#Loops)!
@@ -180,7 +180,7 @@ As you can probably guess, a while loop executes a block of code *while* a
 condition is true. It is possible for a while loop to be one statement, in which
 case the curly braces aren't necessary.
 
-# For loop
+## For loop
 
 Did you notice how we created a variable, initialized it, checked it every loop,
 and then modified it at the end of the loop? This is such a common construct,
@@ -201,7 +201,7 @@ clause, and the increment clause.[^1]
 [^1]: Even though we aren't incrementing in the loop, this is still known as the
     increment clause.
 
-## for each statement
+### for each statement
 
 In addition to the regular for-loop syntax, there is a specialized for statement
 that operates on sequences of data. This is typically known as a "for each" or
@@ -215,7 +215,7 @@ for(int v : array)
     System.out.println(v);
 ```
 
-# Exiting a loop body
+## Exiting a loop body
 
 Sometimes, you want to quit the loop entirely because of some reason in the
 middle of executing the loop.
@@ -237,7 +237,7 @@ These statements are useful when a loop has no natural beginning or end point at
 which to check the conditional. Or it might have multiple points at which to
 check.
 
-# Switch statement
+## Switch statement
 
 A switch statement is like a very long if-else chain. While it may seem very
 bizarre to have a specialized statement for this, you will likely see this
@@ -271,7 +271,7 @@ Switch statements are typically used with a *discriminate value*, or a value
 which must have one of a finite number of values. This can be something like a
 robot state.
 
-# Summary
+## Summary
 
 We learned about all forms of flow control in Java, if statements, loop
 statements, and switch statements. These are the statements which implement the
