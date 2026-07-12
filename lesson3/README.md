@@ -74,7 +74,7 @@ If you have more than one condition to test, you can use an `else if`
 construction.
 
 Technically, there is no special "else if" keyword. It's just a normal `else`,
-where the the statement to execute is another `if` statement.
+where the statement to execute is another `if` statement.
 
 i.e. you may write:
 
@@ -217,8 +217,8 @@ for(int v : array)
 
 ## Exiting a loop body
 
-Sometimes, you want to quit the loop entirely because of some reason in the
-middle of executing the loop.
+Sometimes, you want to quit the loop entirely because some condition was
+detected in the middle of executing the loop.
 
 If you want to exit just that single loop iteration, you can use the `continue`
 statement.
@@ -235,7 +235,7 @@ If you want to exit the entire loop, you can use the `break` statement.
 
 These statements are useful when a loop has no natural beginning or end point at
 which to check the conditional. Or it might have multiple points at which to
-check.
+check various conditions.
 
 ## Switch statement
 
@@ -263,6 +263,8 @@ switch(value) {
 
 Note that every clause, instead of using curly braces, uses a colon, followed by
 a list of statements, and then requires a `break;` statement.
+
+The `default:` case is executed if none of the other cases match.
 
 What happens if you omit the `break;` statement? Then the execution continues to
 the statements in the next clause.
