@@ -11,7 +11,7 @@ issues, such as collisions or timing differences.
 For this, we need to take different code paths based on information we receive
 from the inputs.
 
-The alteration of execution based on input is called [flow control](url).
+The alteration of execution based on input is called [flow control](https://en.wikipedia.org/wiki/Control_flow).
 
 # if statements
 
@@ -44,7 +44,7 @@ than 5. Otherwise, it results in `false`.
 
 ## statement block
 
-A statement block is a list of statments wrapped in a set of curly braces `{`
+A statement block is a list of statements wrapped in a set of curly braces `{`
 and `}`. The entire block can be treated as one, when deciding which code to
 execute.
 
@@ -66,7 +66,7 @@ you must use the curly braces.
 
 The `else` keyword says what to execute when the condition is *false*. This
 portion of the statement is optional (in the case where you don't need to
-execute something when it is false.
+execute something when it is false).
 
 ## else if
 
@@ -93,7 +93,7 @@ if (x > 10) {
 the statement inside the `else` block is just another `if-else` statement.
 
 But since we are executing exactly one statement (an if-else statement), we can
-remove the curly braces. And since white space is insignficiant, we can paste
+remove the curly braces. And since white space is insignificant, we can paste
 the `if` onto the same line as the `else`:
 
 ```java
@@ -155,8 +155,8 @@ true otherwise.
 
 # While loop
 
-What if we weant to execute a block of staatements multiple times? For that, we
-need a [loop](url)!
+What if we want to execute a block of statements multiple times? For that, we
+need a [loop](https://en.wikipedia.org/wiki/Control_flow#Loops)!
 
 Let's say we want to count down a timer for liftoff. First we will need a
 variable to store the timer.
@@ -226,8 +226,8 @@ statement.
 ```java
 for(int floor = 1; floor < 20; floor += 1) {
    if(floor == 13) continue; // skip unlucky numbers
-   System.out.write("Floor ");
-   System.out.writeln(floor);
+   System.out.print("Floor ");
+   System.out.println(floor);
 }
 ```
 
@@ -267,7 +267,7 @@ a list of statements, and then requires a `break;` statement.
 What happens if you omit the `break;` statement? Then the execution continues to
 the statements in the next clause.
 
-Switch statements are typically used with a *descriminate value*, or a value
+Switch statements are typically used with a *discriminate value*, or a value
 which must have one of a finite number of values. This can be something like a
 robot state.
 
