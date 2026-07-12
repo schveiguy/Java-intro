@@ -285,3 +285,7 @@ integer. As an example, try:
 int age = 42;
 age = age / 5;
 ```
+
+---
+
+[Previous: Introduction to Java](../lesson1/README.md) | [Next: Flow Control](../lesson3/README.md)

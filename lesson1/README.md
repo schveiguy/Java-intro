@@ -326,3 +326,7 @@ more to say here, as you are just learning.
 
 Try changing the text printed in the greeting, and adding more lines of text to
 print!
+
+---
+
+[Next: Statements, Declarations, and Variables](../lesson2/README.md)
