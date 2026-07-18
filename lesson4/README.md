@@ -250,7 +250,9 @@ factorial of that number as a `long`? You can try using loops or recursion.
 Some values to test: 
 
 > 5! = 5 × 4 × 3 × 2 × 1 = 120
+
 > 10! = 3628800
+
 > 15! = 1307674368000
 
 ---
