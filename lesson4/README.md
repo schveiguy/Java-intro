@@ -4,7 +4,7 @@ A *function* in Java is a sequence of statements that are executed in the order
 they appear. We have already been writing functions, the `main` function in our
 Hello World example is a function.
 
-But functions serve as an *abstraction* of functionality that can be reused
+But functions serve as an [*abstraction*](https://en.wikipedia.org/wiki/Abstraction_(computer_science)) of functionality that can be reused
 multiple times in a program. They also help us take on reasonable sizes of
 functionality without having to do everything at once.
 
@@ -190,32 +190,37 @@ number raised to the 0 power is 1. This terminates the recursion.
 The recursive definition of a power function is that X<sup>n</sup> = X *
 X<sup>n-1</sup>. This is almost exactly how we typed it out.
 
+One more note: there are two `return` statements. Only one of these can execute
+each time a function is called. Once a `return` statement is executed, the
+function is ended, and the value specified is returned. This is why we did not
+need to enclose the second `return` statement in an `else` clause.
+
 What happens when we call `power(42, 3)`? Let's follow the execution in our
 mind:
 
-1. The power(42, 3) function call checks, is 3 == 0? It is not.
-2. It then calls power(42, 2).
-3. power(42, 2) function checks is 2 == 0? It is not.
-4. It then calls power(42, 1).
-5. power(42, 1) similarly calls power(42, 0).
+1. The `power(42, 3)` function call checks, is `3 == 0`? It is not.
+2. It then calls `power(42, 2)`.
+3. `power(42, 2)` function checks is `2 == 0`? It is not.
+4. It then calls `power(42, 1)`.
+5. `power(42, 1)` similarly calls `power(42, 0)`.
 
 Note: At this point, you have four calls to `power`, each with their own version of
-`num` and `exp`. These all exist on a *call stack*, where the compiler can
+`num` and `exp`. These all exist on a [*call stack*](https://en.wikipedia.org/wiki/Call_stack), where the compiler can
 allocate memory for each of the variables.
 
-6. power(42, 0) checks is 0 == 0? It *is*!
-7. It returns 1.
+6. `power(42, 0)` checks is `0 == 0`? It *is*!
+7. It returns `1`.
 
 The return brings execution back to the `power(42, 1)` call. Here, the
 expression `power(42, 0)` has been replaced with the return value `1`.
 
-8. power(42, 1) then multiplies that value (1) by `num` (42), and returns that
-   value
-9. power(42, 2) has now received that value (42) and substituted it for the call
-   to `power(42, 1)`. It multiplies this value by `num` (42) and returns that
-   value (1764).
-10. power(42, 3) receives that value, and likewise multiplies it by `num` (42),
-    to return that value (74088).
+8. `power(42, 1)` then multiplies that value (`1`) by `num` (`42`), and returns
+   that value
+9. `power(42, 2)` has now received that value (`42`) and substituted it for the
+   call to `power(42, 1)`. It multiplies this value by `num` (`42`) and returns
+   that value (`1764`).
+10. `power(42, 3)` receives that value, and likewise multiplies it by `num`
+    (`42`), to return that value (`74088`).
 11. `main` receives that value, and assigns that to it's own `num` variable.
 
 All of this happens so fast you can consider it happens almost instantly.
