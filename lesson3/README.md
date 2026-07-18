@@ -286,4 +286,4 @@ TODO
 
 ---
 
-[Previous: Statements, Declarations, and Variables](../lesson2/README.md)
+[Previous: Statements, Declarations, and Variables](../lesson2/README.md) | [Next: Functions](../lesson4/README.md)
