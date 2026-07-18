@@ -187,8 +187,11 @@ call. In this new call, `exp` is one less.[^2]
 The `if` statement represents the "base case" of the recursive function -- any
 number raised to the 0 power is 1. This terminates the recursion.
 
-The recursive definition of a power function is that X<sup>n</sup> = X *
-X<sup>n-1</sup>. This is almost exactly how we typed it out.
+The recursive definition of a power function is:
+
+> N<sup>0</sup> = 1; N<sup>a</sup> = N × N<sup>a-1</sup>
+
+This is almost exactly how we typed it out.
 
 One more note: there are two `return` statements. Only one of these can execute
 each time a function is called. Once a `return` statement is executed, the
@@ -239,16 +242,16 @@ A very common recursive function is called `factorial`. A factorial of a number
 
 The definition of `N!` is:
 
-`N * (N - 1) * (N - 2) * ... * 1`
+> N × (N - 1) × (N - 2) × ... × 1
 
 Can you devise a `factorial` function which accepts a `long N` and returns the
 factorial of that number as a `long`? You can try using loops or recursion.
 
 Some values to test: 
 
-5! = 5 * 4 * 3 * 2 * 1 = 120
-10! = 3628800
-15! = 1307674368000
+> 5! = 5 × 4 × 3 × 2 × 1 = 120
+> 10! = 3628800
+> 15! = 1307674368000
 
 ---
 
