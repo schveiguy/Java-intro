@@ -10,5 +10,6 @@ This serves as a prerequisite to the XRP class.
 * [Lesson 2: Statements, Declarations, and Variables](lesson2/README.md) -- Declaring and assigning variables, basic math and assignment operators, Java's common built-in types, and arrays.
 * [Lesson 3: Flow Control](lesson3/README.md) -- `if`/`else` statements, boolean logic, `while` and `for` loops (including for-each), `break`/`continue`, and `switch` statements.
 * [Lesson 4: Functions](lesson4/README.md) -- Declaring and calling functions, parameters and return types, factoring code into reusable functions, and recursion.
+* [Lesson 5: Classes](lesson5/README.md) -- Declaring classes, instances and reference types, fields, methods, constructors, and composing objects with other objects.
 
 More to come here as lessons are created.

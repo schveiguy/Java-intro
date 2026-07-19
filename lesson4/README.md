@@ -257,4 +257,4 @@ Some values to test:
 
 ---
 
-[Previous: Flow Control](../lesson3/README.md)
+[Previous: Flow Control](../lesson3/README.md) | [Next: Classes](../lesson5/README.md)
