@@ -32,7 +32,7 @@ declared. It is important to note that:
 Visual studio code will take care of these details for you.
 
 The name `App` can be decided by you. One thing that is almost universal in
-programming is that *[naming things is hard](https://en.wikipedia.org/wiki/Naming_convention_(programming))*. Not hard in that it's difficult to
+programming is that *[naming things is hard](https://www.mediawiki.org/wiki/Naming_things)*. Not hard in that it's difficult to
 type out, but finding an appropriate name can be challenging.
 
 You want a name that captures the essence of what the class is meant to do.
